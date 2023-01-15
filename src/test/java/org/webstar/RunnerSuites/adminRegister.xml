@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Admin Register suite" verbose="1"  >
+    <listeners>
+        <listener class-name="org.webstar.Listeners.ExtentListener"/>
+    </listeners>
+    <test name="Admin Register" >
+        <parameter name="url" value="http://localhost:3001/admin"/>
+        <classes>
+            <class name="org.webstar.Tests.RegistrationTest"/>
+        </classes>
+    </test>
+</suite>

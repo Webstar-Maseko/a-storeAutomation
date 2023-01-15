@@ -7,6 +7,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.webstar.Factory.BrowserConfig.BrowserSetup;
 import org.webstar.Pages.AdminPages.AdminLogin;
+import org.webstar.Pages.AdminPages.AdminRegister;
 import org.webstar.Pages.AdminPages.Dashboard;
 import org.webstar.Utilities.ReadProperties;
 
@@ -21,6 +22,7 @@ public class BaseTest {
     protected Properties prop;
     protected AdminLogin adminLogin;
     protected Dashboard dashboard;
+    protected AdminRegister adminRegister;
 
 
     @Parameters({"url","browser"})
@@ -42,6 +44,8 @@ public class BaseTest {
 
             //Page objects
             adminLogin  = new AdminLogin(driver);
+            adminRegister = new AdminRegister(driver);
+
 
 
             //
