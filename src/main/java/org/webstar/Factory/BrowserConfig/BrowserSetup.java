@@ -26,13 +26,12 @@ public class BrowserSetup {
 
             driver.set(new ChromeDriver(options));
         } else if (browser.equalsIgnoreCase("Edge")) {
-            WebDriverManager.firefoxdriver().setup();
+            WebDriverManager.edgedriver().setup();
             EdgeOptions options = new EdgeOptions();
-
             driver.set(new EdgeDriver(options));
 
         } else if (browser.equalsIgnoreCase("Firefox")) {
-            WebDriverManager.edgedriver().setup();
+            WebDriverManager.firefoxdriver().setup();
             FirefoxOptions options = new FirefoxOptions();
             driver.set(new FirefoxDriver(options));
         }
