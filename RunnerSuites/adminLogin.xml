@@ -6,6 +6,7 @@
     </listeners>
     <test name="Admin Login" >
         <parameter name="url" value="http://localhost:3001/admin"/>
+        <parameter name="browser" value="${browser}"/>
         <packages>
             <package name="org.webstar.Tests" />
         </packages>
